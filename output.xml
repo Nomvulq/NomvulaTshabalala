@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.4 on win32)" generated="2024-07-18T19:42:27.882681" rpa="false" schemaversion="5">
+<suite id="s1" name="WebTable WaytoAutomate" source="C:\Users\Nomvula\PycharmProjects\pythonProject1\Testcase\WebTable_WaytoAutomate.robot">
+<test id="s1-t1" name="Welcome to WaytoAutomation" line="20">
+<kw name="verifying webtables page">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T19:42:30.268623" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T19:42:28.268149" elapsed="2.000474"/>
+</kw>
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:42:30.268623" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-07-18T19:42:30.268623" elapsed="89.101207"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T19:44:01.371603" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T19:43:59.370829" elapsed="2.000774"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:01.372604" level="INFO">Opening url 'https://www.way2automation.com/angularjs-protractor/webtables/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-07-18T19:44:01.371603" elapsed="7.096363"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-18T19:44:08.467966" elapsed="0.075924"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T19:44:13.545278" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T19:44:08.544889" elapsed="5.000389"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:13.711621" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="UsersNomvulaPycharmProjectspythonProject1%20screen1.png"&gt;&lt;img src="UsersNomvulaPycharmProjectspythonProject1%20screen1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_PATH1} screen1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-07-18T19:44:13.545278" elapsed="0.166343"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:13.712620" level="INFO">Clicking element '//thead/tr[2]/td[1]/button[1]'.</msg>
+<arg>${add_user}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:13.712620" elapsed="0.127318"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:13.840938" level="INFO">Typing text 'FName1' into text field 'name:FirstName'.</msg>
+<arg>name:FirstName</arg>
+<arg>FName1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:13.839938" elapsed="0.188920"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:14.028858" level="INFO">Typing text 'LName1' into text field 'name:LastName'.</msg>
+<arg>name:LastName</arg>
+<arg>LName1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:14.028858" elapsed="0.147456"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:14.177313" level="INFO">Typing text 'User1' into text field 'name:UserName'.</msg>
+<arg>name:UserName</arg>
+<arg>User1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:14.176314" elapsed="0.244052"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:14.420986" level="INFO">Typing text 'Pass1' into text field 'name:Password'.</msg>
+<arg>name:Password</arg>
+<arg>Pass1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:14.420986" elapsed="0.145099"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:14.567085" level="INFO">Clicking element '//input[@value='15']'.</msg>
+<arg>${customer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:14.567085" elapsed="0.080051"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:14.647136" level="INFO">Clicking element '//select[@name='RoleId']'.</msg>
+<arg>${role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:14.647136" elapsed="0.152244"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:14.800380" level="INFO">Clicking element '//option[text()='Admin']'.</msg>
+<arg>${admin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:14.800380" elapsed="0.090654"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:14.891034" level="INFO">Typing text 'admin@email.com' into text field 'name:Email'.</msg>
+<arg>name:Email</arg>
+<arg>admin@email.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:14.891034" elapsed="0.172622"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:15.064655" level="INFO">Typing text '082555' into text field 'name:Mobilephone'.</msg>
+<arg>name:Mobilephone</arg>
+<arg>082555</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:15.063656" elapsed="0.129796"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:15.193452" level="INFO">Clicking element '//button[text()="Save"]'.</msg>
+<arg>${save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:15.193452" elapsed="0.077039"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T19:44:17.270581" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T19:44:15.270491" elapsed="2.000090"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:17.270581" level="INFO">Clicking element '//thead/tr[2]/td[1]/button[1]'.</msg>
+<arg>${add_user}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:17.270581" elapsed="0.087752"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:17.359332" level="INFO">Typing text 'FName2' into text field 'name:FirstName'.</msg>
+<arg>name:FirstName</arg>
+<arg>FName2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:17.358333" elapsed="0.142163"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:17.500496" level="INFO">Typing text 'LName2' into text field 'name:LastName'.</msg>
+<arg>name:LastName</arg>
+<arg>LName2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:17.500496" elapsed="0.182887"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:17.684382" level="INFO">Typing text 'User2' into text field 'name:UserName'.</msg>
+<arg>name:UserName</arg>
+<arg>User2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:17.683383" elapsed="0.136761"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:17.820144" level="INFO">Typing text 'Pass2' into text field 'name:Password'.</msg>
+<arg>name:Password</arg>
+<arg>Pass2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:17.820144" elapsed="0.111351"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:17.932493" level="INFO">Clicking element '//input[@value='16']'.</msg>
+<arg>${customer2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:17.931495" elapsed="0.067758"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:17.999253" level="INFO">Clicking element '//select[@name='RoleId']'.</msg>
+<arg>${role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:17.999253" elapsed="0.077820"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:18.078068" level="INFO">Clicking element '//option[text()='Admin']'.</msg>
+<arg>${admin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:18.077073" elapsed="0.036407"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:18.113480" level="INFO">Typing text 'cusomter@email.com' into text field 'name:Email'.</msg>
+<arg>name:Email</arg>
+<arg>cusomter@email.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:18.113480" elapsed="0.131744"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:18.246223" level="INFO">Typing text '083444' into text field 'name:Mobilephone'.</msg>
+<arg>name:Mobilephone</arg>
+<arg>083444</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:18.246223" elapsed="0.115168"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:18.362392" level="INFO">Clicking element '//button[text()="Save"]'.</msg>
+<arg>${save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T19:44:18.362392" elapsed="0.058997"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T19:44:23.422500" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T19:44:18.421389" elapsed="5.001111"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-18T19:44:23.575396" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="UsersNomvulaPycharmProjectspythonProject1%20screen2.png"&gt;&lt;img src="UsersNomvulaPycharmProjectspythonProject1%20screen2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_PATH2} screen2.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-07-18T19:44:23.423467" elapsed="0.151929"/>
+</kw>
+<status status="PASS" start="2024-07-18T19:42:28.268149" elapsed="115.307247"/>
+</kw>
+<status status="PASS" start="2024-07-18T19:42:28.268149" elapsed="115.307247"/>
+</test>
+<status status="PASS" start="2024-07-18T19:42:27.889187" elapsed="115.686209"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="WebTable WaytoAutomate">WebTable WaytoAutomate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
